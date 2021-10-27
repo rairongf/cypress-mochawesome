@@ -1,0 +1,24 @@
+{
+  "name": "cypress-mochawesome",
+  "version": "1.0.0",
+  "description": "simple cypress with mochawesome project",
+  "main": "index.js",
+  "dependencies": {
+    "cypress": "^8.7.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cypress:run": "cypress run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rairongf/cypress-mochawesome.git"
+  },
+  "author": "rairongf",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rairongf/cypress-mochawesome/issues"
+  },
+  "homepage": "https://github.com/rairongf/cypress-mochawesome#readme"
+}
