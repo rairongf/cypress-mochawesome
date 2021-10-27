@@ -6,11 +6,18 @@
   "dependencies": {
     "cypress": "^8.7.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "mochawesome": "^6.3.1",
+    "mochawesome-merge": "^4.2.0",
+    "mochawesome-report-generator": "^5.2.0"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "cy:run": "cypress run",
-    "cy:open": "cypress open"
+    "cy:open": "cypress open",
+    "cy:run-aula": "cypress run --spec 'cypress/integration/aula_inatel/**/'",
+    "mc:merge": "mochawesome-merge 'cypress/reports/*.json' > mochawesome.json",
+    "mc:html": "marge mochawesome.json"
   },
   "repository": {
     "type": "git",
