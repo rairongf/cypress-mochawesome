@@ -1,27 +1,20 @@
 # cypress-mochawesome
 
-## Instalação do ambiente de desenvolvimento:
+Projeto criado para a disciplina de Qualidade de Software - S206.
+Instituto Nacional de Telecomunicações - INATEL.
 
-1. Git Bash (Git for Windows - mais leve)
-https://gitforwindows.org/
+O `cypress-mochawesome` é um cenário de testes com o intuito de testar as funcionalidades de login e cadastro do site [demoblaze](https://www.demoblaze.com/index.html).
+## Ambiente de desenvolvimento:
 
-2. Nodejs (node):
-https://nodejs.org/en/
+- [Git Bash](https://git-scm.com/downloads)
+- [Nodejs (node)](https://nodejs.org/en/)
+- [IDE VSCode (code)](https://code.visualstudio.com/)
+<br/>OBS: Pode usar qualquer IDE. Eclipse, InteliJ...fica a seu critério.
 
-3. IDE VSCode (code):
-https://code.visualstudio.com/
-OBS: Pode usar qualquer IDE. Eclipse, InteliJ...fica a seu critério.
+## Como executar:
 
-## Instalação - Cypress (Teste de UI):
-1. Faça a instalação do cypress via linha de comando. Abra o terminal e digite
+1. Clone este repositório utilizando o comando `git clone`.
 
-```
-npm install cypress
-```
+2. Execute o comando `npm install` no diretório raiz do repositório.
 
-2. Caso não queira utilizar o cypress pelo NPM, pode fazer o download direto do site: https://www.cypress.io/
-
-Link para download direto: https://download.cypress.io/desktop
-
-Basta baixar, extrair, executar o Cypress.exe e apontar para o diretório do projeto desejado na interface do cypress.
-Utilize a IDE para editar o código.
+3. Execute o comando `npm run tests` para realizar os testes e gerar o relatório.
