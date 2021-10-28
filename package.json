@@ -15,7 +15,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "cy:run": "cypress run",
     "cy:open": "cypress open",
-    "cy:run-aula": "cypress run --spec 'cypress/integration/aula_inatel/**/'",
+    "cy:run-blaze": "cypress run --spec 'cypress/integration/tarefa_ui/**/'",
     "mc:merge": "mochawesome-merge 'cypress/reports/*.json' > mochawesome.json",
     "mc:html": "marge mochawesome.json"
   },

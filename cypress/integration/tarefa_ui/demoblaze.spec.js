@@ -1,24 +1,24 @@
 /// <reference types="cypress"/>
 
-describe('Cenário de teste: Testar as funcionalidades do Youtube.', () => {
+describe('Cenário de teste: Testar as funcionalidades de Login do site demoblaze.', () => {
 
   beforeEach(() => {
     cy.visit('https://www.demoblaze.com/index.html');
   })
 
-  it.skip('Caso de teste: Abrir diálogo de cadastro ao clicar no botão', () => {
+  it('Caso de teste: Abrir diálogo de cadastro ao clicar no botão', () => {
     cy.get('#signin2').click();
     cy.get('#signInModal > .modal-dialog > .modal-content').should('be.visible');
   })
 
-  it.skip('Caso de teste: Registrar um usuario com sucesso', () => {
+  it('Caso de teste: Registrar um usuario com sucesso', () => {
     criarNovoUsuario({testarFalha: false});
     cy.on('window:alert', (text) => {
       expect(text).to.equal('Sign up successful.');
     });
   })
 
-  it.skip('Caso de teste: Falha ao tentar registrar um usuario com dados invalidos', () => {
+  it('Caso de teste: Falha ao tentar registrar um usuario com dados invalidos', () => {
     criarNovoUsuario({testarFalha: true});
     cy.on('window:alert', (text) => {
       expect(text).to.equal('Please fill out Username and Password.');
@@ -30,12 +30,12 @@ describe('Cenário de teste: Testar as funcionalidades do Youtube.', () => {
     criarUsuarioFixo('This user already exist.');
   })
 
-  it.skip('Caso de teste: Login na plataforma com sucesso', () => {
+  it('Caso de teste: Login na plataforma com sucesso', () => {
     var userId = loginDemoblaze();
     cy.get('#nameofuser').should('have.text', `Welcome ${userId}`);
   })
 
-  it.skip('Caso de teste: Sair da conta do usuário e verificar', () => {
+  it('Caso de teste: Sair da conta do usuário e verificar', () => {
     var userId = loginDemoblaze();
     cy.get('#nameofuser').should('have.text', `Welcome ${userId}`);
     cy.get('#logout2').click();
