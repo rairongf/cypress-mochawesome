@@ -12,7 +12,7 @@
     "mochawesome-report-generator": "^5.2.0"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "tests": "cypress run && mochawesome-merge 'cypress/reports/*.json' > mochawesome.json && marge mochawesome.json",
     "cy:open": "cypress open",
     "cy:run": "cypress run",
     "mc:merge": "mochawesome-merge 'cypress/reports/*.json' > mochawesome.json",
