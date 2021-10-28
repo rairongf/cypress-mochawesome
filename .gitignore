@@ -1,2 +1,6 @@
 node_modules/
 *.mp4
+cypress/reports/
+cypress/videos/
+mochawesome.json
+mochawesome-report/
